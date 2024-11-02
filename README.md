@@ -74,7 +74,7 @@ protected $fillable = ['name', 'description']; // поля для массово
    - `php artisan make:migration add_category_id_to_tasks_table --table=tasks`
    - Определяем структуру поля `category_id` и добавляем внешний ключ для связи с таблицей **category**.
 
-   ```php
+```php   
    public function up()
     {
         Schema::table('tasks', function (Blueprint $table) {
@@ -86,7 +86,7 @@ protected $fillable = ['name', 'description']; // поля для массово
                   ->onDelete('cascade'); // удаление задачи при удалении категории
         });
     }
-    ```
+```
 
 13. Создаем промежуточную таблицу для связи многие ко многим между задачами и тегами:
    - `php artisan make:migration create_task_tag_table`
