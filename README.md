@@ -70,6 +70,7 @@ protected $fillable = ['name', 'description']; // поля для массово
 ```
 
 12. Создаем миграцию для добавления поля `category_id` в таблицу **task**.
+    
    - `php artisan make:migration add_category_id_to_tasks_table --table=tasks`
    - Определяем структуру поля `category_id` и добавляем внешний ключ для связи с таблицей **category**.
 
