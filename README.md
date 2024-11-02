@@ -10,7 +10,7 @@
 2. Создаем новую базу данных для приложения **todo_app**.
 3. Настраиваем переменные окружения в файле `.env` для подключения к базе данных:
 
-![Ку](images/1.jpg)
+![Ку](./1.jpg)
 
 4. Создаем модель `Category` — категория задачи.
    - `php artisan make:model Category -m`
@@ -45,7 +45,7 @@ public function up()
 ```
 8. Запускаем миграцию для создания таблицы в базе данных:
 
-![Ку](images/2.jpg)
+![Ку](./2.jpg)
 
 9. Создаем модель `Tag` — тег задачи.
 
@@ -193,17 +193,17 @@ class Tag extends Model
    ```bash
    php artisan db:seed
    ```
-![Ку](images/3.jpg)
+![Ку](./3.jpg)
 
 25. Открываем контроллер `TaskController` (`app/Http/Controllers/TaskController.php`).
 26. Обновляем методы `index`, `Task`,  `show`, `index`, `show`, `destroy`, `edit`, `update`, `create`, `store`.
 27. Обновляем соответствующие представления для отображения списка задач и отдельной задачи.
 
-![Ку](images/4.jpg)
+![Ку](./4.jpg)
 
-![Ку](images/6.jpg)
+![Ку](./6.jpg)
 
-![Ку](images/6.jpg)
+![Ку](./6.jpg)
 
 ## Контрольные вопросы
 
